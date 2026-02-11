@@ -1,4 +1,4 @@
-# particle-wave-runner
+# Particle Wave Runner
 
 ## Dependencies
 
@@ -33,9 +33,8 @@ sudo apt install libopenmpi-dev
 From root, run
 
 ```
-mkdir build && cd build
-cmake ..
-make
+cmake -S . -B build
+cmake --build build
 ```
 
 ## Run
@@ -43,7 +42,7 @@ make
 From build, run
 
 ```
-mpirun -n <N> ./
+mpirun -n <N> ./particle_wave_runner
 ```
 
 ## Format
